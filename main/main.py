@@ -4,7 +4,7 @@ from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import UniqueConstraint
 
 app = Flask(__name__)
-app.config["SQLALCHEMY_DATABASE_URI"] = "mysql://root:root@database/main"
+app.config["SQLALCHEMY_DATABASE_URI"] = "mysql://root:root@127.0.0.1:3307/main"
 CORS(app)
 
 db = SQLAlchemy(app)
